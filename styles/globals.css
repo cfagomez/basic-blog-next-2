@@ -1,26 +1,102 @@
-html,
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: 'Noto Sans Mono', monospace;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-* {
-  box-sizing: border-box;
+.bg-dark {
+    background-color: #606C38;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.bg-liver {
+    background-color: #BC6C25;
 }
+
+.bg-earth {
+    background-color: #DDA15E;
+}
+
+.logo {
+    font-size: 3rem;
+    padding: 1em;
+    margin: 0;
+}
+
+.text-footer {
+    font-size: 1.5rem;
+    padding: 1em;
+    margin: 0;
+}
+
+.text-contact {
+    font-size: 1rem;
+    padding: 1em;
+    border-style: solid;
+    border-radius: 0.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-cornsilk {
+    color: #FEFAE0;
+}
+
+.text-black {
+    color: black;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.button {
+    background-color: #DDA15E;
+    padding: 0.5em;
+    color: #FEFAE0;
+    border-style: solid;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.padding {
+    padding: 1.5em;
+}
+
+.padding-x {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.margin-right {
+    margin-right: 0.5em;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+.h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.font-small {
+    font-size: 1rem;
+}
+
+
