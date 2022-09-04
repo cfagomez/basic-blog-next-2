@@ -3,7 +3,7 @@ import Entrada from './Entrada'
 const ListadoEntradas = ({entradas}) => {
   return (
     <main className='container text-center bg-earth padding'>
-        <h2 className='margin-0 padding'>Articulos Destacados</h2>
+        <h2 className='h2 margin-0 padding'>Articulos Destacados</h2>
         <div>
             {
                 entradas.map(entrada => (

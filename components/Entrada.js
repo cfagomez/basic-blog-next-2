@@ -3,7 +3,7 @@ import { formatearFecha } from '../helpers/formatFecha'
 
 const Entrada = ({entrada}) => {
 
-    const {title, resumen, published_at} = entrada
+    const {title, resumen, published_at, url} = entrada
 
   return (
     <article className='margin-bottom'>
@@ -11,7 +11,7 @@ const Entrada = ({entrada}) => {
             <h3 className='h3 text-cornsilk'>{title}</h3>
             <p className='text-article text-cornsilk'>{resumen}</p>
             <p className='text-cornsilk'>{formatearFecha(published_at)}</p>
-            <a className='button margin-right'>Leer Mas</a>
+            <a href={`/blog/${url}`} className='button margin-right'>Leer Mas</a>
         </div>
     </article>
   )
